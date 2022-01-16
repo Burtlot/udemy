@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WelcomeController;
+use App\Models\User;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,7 +26,10 @@ Route::get('/welcome/{name?}/{lastname?}/{age?}', [WelcomeController::class, 'we
     ]);;
 
 Route::get('/users', function () {
-    $users = [];
+    //return User::get(); // ritorna JSN con tutti i record
+    return User::paginate(5); // ritorna JSN con tutti i record
+
+    /*    $users = [];
     $faker = Faker\Factory::create('it_IT');
     foreach (range(0,10) as $index){
         $user = new stdClass();
@@ -35,5 +39,5 @@ Route::get('/users', function () {
     }
     //return $users;
     //return ['John', 'David'];
-    return view('users');
+    return view('users');*/
 });

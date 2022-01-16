@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+
     <link rel="stylesheet" href="/css/app.css">
 </head>
 
@@ -17,10 +19,10 @@
     <div class="container"><a class="navbar-brand" href="index.html">@yield('title','Home')</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                <li class="nav-item"><a class="nav-link" href="/index.php">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/users">About us</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
-                <li class="nav-item"><a class="nav-link" href="post.html">Blog Post</a></li>
+                <li class="nav-item"><a class="nav-link" href="/page/blog">Blog Post</a></li>
             </ul>
         </div>
     </div>
@@ -40,7 +42,7 @@
                     <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></li>
                     <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></li>
                 </ul>
-                <p class="text-muted text-center copyright">Copyright&nbsp;©&nbsp;Darley 2022</p>
+                <p class="text-muted text-center copyright">Copyright&nbsp;©&nbsp;AIAC SERVICE 2022</p>
             </div>
         </div>
     </div>
